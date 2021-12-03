@@ -5,7 +5,7 @@ import days from "./days/index.ts";
 // deno intex.ts 1 2 0
 
 const day = Number(Deno.args[0]);
-const part = Number(Deno.args[1]);
+const part = Number(Deno.args[1]) as 1 | 2;
 const isSample = Boolean(Number(Deno.args[2]));
 
 console.log(await days[day - 1]({ day, part, isSample }));

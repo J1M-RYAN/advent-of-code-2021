@@ -2,7 +2,7 @@ import { readLines } from "https://deno.land/std/io/mod.ts";
 import * as path from "https://deno.land/std/path/mod.ts";
 export type Day = {
   day: number;
-  part: number;
+  part: 1 | 2;
   isSample: boolean;
 };
 const getReaderForDay = async (day: Day): Promise<Deno.File> => {
